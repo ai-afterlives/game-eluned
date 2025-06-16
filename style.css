@@ -1,0 +1,144 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: url('https://www.transparenttextures.com/patterns/old-mathematics.png') repeat;
+  background-color: ##fff8f0;
+  margin: 50;
+  padding: 10px;
+}
+
+#opening {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/old-mathematics.png');
+  background-color: ##fff8f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  border: 5px double #000;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  font-family: 'Special Elite';
+}
+
+#opening h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+#opening p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+#enter-button {
+  font-size: 1.5em;
+  padding: 12px 24px;
+  background: #000;
+  color: #fff;
+  border: 3px double #000;
+border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Special Elite';
+}
+
+#game {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#story {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  min-height: 50px;
+}
+
+#choices button {
+  font-size: 1.2em;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background: #fff;
+  cursor: pointer;
+color: #000;
+  border-radius: 10px;  /* This makes them rounder */
+  font-family: 'Courier New', Courier, monospace;
+  transition: background 0.3s, color 0.3s;
+}
+
+#choices button:hover {
+  background: #000;
+  color: #fff;
+}
+
+#gallery {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.gallery-item {
+  border: 1px solid #000;
+ border-radius: 8px;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+.gallery-item.header-card-item {
+  background-color: #fdf6e3;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 50px 20px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: centre;
+ align-items: centre;  /* Center content horizontally */
+}
+
+.header-card-inside h1 {
+  font-family: 'Special Elite', Courier, monospace;
+  font-size: 1.4em;
+  margin: 0;
+  color: #34495e;
+}
+
+.header-card-inside .subtitle {
+font-family: 'Special Elite', Courier, monospace;  
+font-size: 1.2em;
+  margin: 20px 0 30px 0;
+  color: #34495e;
+}
+
+.learn-more-button {
+font-family: 'Special Elite', Courier, monospace;  
+padding: 10px 20px;
+  background-color: #34495e;
+  color: #ffffff;
+  border: 2px solid #34495e;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background 0.3s, color 0.3s;
+}
+
+.learn-more-button:hover {
+  background-color: #ffffff;
+  color: #34495e;
+}
