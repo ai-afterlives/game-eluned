@@ -230,7 +230,7 @@ function typeWriter(text, i = 0) {
   }
   if (i < text.length) {
     storyElement.textContent += text.charAt(i);
-    typingTimeout = setTimeout(() => typeWriter(text, i + 1), 30);
+    typingTimeout = setTimeout(() => typeWriter(text, i + 1), 20);
   } else {
     typeSound.pause();
     typing = false;
