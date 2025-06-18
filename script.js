@@ -55,11 +55,11 @@ let soundEnabled = false;
 
 // Game story object
 const story = {
-  intro: {
-    text: "You are the curator at Historic Voices Museum, Wales. You’ve been donated the Eluned Davies collection by her former partner Catrin Meredith. Explore the catalog entires below ann press next when ready",
-    choices: [{ text: "NEXT", next: "start" }]
-  },
   start: {
+    text: "You are the curator at Historic Voices Museum, Wales. You’ve been donated the Eluned Davies collection by her former partner Catrin Meredith. Explore the catalog entires below ann press next when ready",
+    choices: [{ text: "NEXT", next: "intro" }]
+  },
+  intro: {
     text: "You’re tasked with developing the AI Afterlife prototype for Eluned Davies. Where do you begin?",
     choices: [
       { text: "Start with the Catrin Meredith estate materials", next: "catrinEstate" },
