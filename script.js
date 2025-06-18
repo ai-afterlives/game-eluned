@@ -57,9 +57,8 @@ let soundEnabled = false;
 const story = {
   intro: {
     text: "You are the curator at Historic Voices Museum, Wales. You’ve been donated the Eluned Davies collection by her former partner Catrin Meredith. Explore the catalog entires below ann press next when ready",
-    choices: [
+    choices:
       { text: "NEXT", next: "start" }
-    ]
   },
   start: {
     text: "You’re tasked with developing the AI Afterlife prototype for Eluned Davies. Where do you begin?",
