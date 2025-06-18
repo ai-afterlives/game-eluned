@@ -21,7 +21,7 @@ const imagePaths = [
 ];
 
 const galleryImages = [
-  { path: "images/eluned_portrait.png", caption: "Eluned Caradog" },
+  { path: "images/eluned_portrait.png", caption: "Eluned Davies" },
   { path: "images/ElunedCatrin.png", caption: "Eluned & Catrin (1882)" },
   { path: "images/book_cover.png", caption: "Weaving the Silence (1916)" },
  { path: "images/Eluned_Gwen.png", caption: "Eluned by Gwen John" },
@@ -55,22 +55,28 @@ let soundEnabled = false;
 
 // Game story object
 const story = {
+  intro: {
+    text: "You are the curator at Historic Voices Museum, Wales. You’ve been donated the Eluned Davies collection by her former partner Catrin Meredith. Explore the catalog entires below ann press next when ready",
+    choices: [
+      { text: "NEXT", next: "start" }
+    ]
+  },
   start: {
-    text: "You are the curator at Historic Voices Museum, Wales. You’re tasked with developing the AI Afterlife prototype for Eluned Caradog. Where do you begin?",
+    text: "You’re tasked with developing the AI Afterlife prototype for Eluned Davies. Where do you begin?",
     choices: [
       { text: "Start with the Catrin Meredith estate materials", next: "catrinEstate" },
-      { text: "Negotiate with the Caradog family", next: "caradogFamily" }
+      { text: "Negotiate with the Davies family", next: "DaviesFamily" }
     ]
   },
   catrinEstate: {
-    text: "The Meredith estate donated extensive archives. But the Caradog family still holds private letters. How do you approach them?",
+    text: "The Meredith estate donated extensive archives. But the Davies family still holds private letters. How do you approach them?",
     choices: [
       { text: "Negotiate joint curation with family", next: "familyDeal" },
       { text: "Proceed without family letters", next: "partialArchive" }
     ]
   },
-  caradogFamily: {
-    text: "The Caradog family is divided. Some fear exposure of Eluned's private life. What’s your move?",
+  DaviesFamily: {
+    text: "The Davies family is divided. Some fear exposure of Eluned's private life. What’s your move?",
     choices: [
       { text: "Offer full transparency rights", next: "familyDeal" },
       { text: "Appeal to Welsh national heritage", next: "familySplit" }
@@ -201,7 +207,7 @@ const headerDiv = document.createElement('div');
     <div class="header-card-inside">
  <h1>📁</h1>     
 <h1>Historic Voices Museum</h1>
-      <div class="subtitle">Eluned Caradog's Collection</div>
+      <div class="subtitle">Eluned Davies's Collection</div>
       <a href="https://ai-afterlives.github.io/wiki-eluned/" target="_blank" class="learn-more-button">Learn More</a>
     </div>
   `;
