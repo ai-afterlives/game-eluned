@@ -56,7 +56,7 @@ let soundEnabled = false;
 // Game story object
 const story = {
   start: {
-    text: "You are the curator at Historic Voices Museum, Wales. You’ve been donated the Eluned Davies collection by her former partner Catrin Meredith. Explore the catalog entires below ann press next when ready",
+    text: "You are the curator at Historic Voices Museum, Wales. You’ve been donated the Eluned Davies collection by her former partner Catrin Meredith. <b>Explore the catalog entires below<b>. Press next when ready",
     choices: [{ text: "NEXT", next: "intro" }]
   },
   intro: {
